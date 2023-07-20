@@ -1,0 +1,173 @@
+@media screen and (max-width:800px) {
+    .logo-header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner {
+        min-height: 20vh;
+    }
+    .banner a {
+        font-size: 15px;
+        padding: 15px;
+
+    }
+    .content {
+        grid-template-columns: 1fr;
+        margin: auto 0.5em;
+        grid-gap: 5px;
+    }
+    .contact-content {
+        margin: 0px;
+    }
+    .service-content {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 15px;
+    }
+    .aboutContent {
+        margin: auto 0.5em;
+    }
+    .horizental {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .leftSlide {
+        height: 40vh;
+        width: 100%;
+    }
+    .slide {
+        min-height: 40vh;
+    }
+    .slide-image {
+        height: 40vh;
+        width: 100%;
+        object-fit: contain;
+    }
+    .socialActivity {
+        height: 40vh;
+        width: 100%;
+    }
+    .type {
+        max-width: 100%;
+    }
+    .nav-button {
+        display: block;
+        grid-column-start: 2;
+        justify-self: end;
+    }
+    .navigation {
+        transition: 1s;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navigation.open {
+        transition: 1.5s;
+        max-height: 50vh;
+    }
+    .navigation a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-image {
+        width: 100%;
+        max-width: 100%;
+        object-position: center;
+    }
+    .image {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner h1 {
+        font-size: 15px;
+        padding: 8px;
+    }
+    .footer {
+        padding: 0px;
+    }
+    
+
+/* mobile phone size */
+
+@media screen and (max-width:480px) {
+    .logo-header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner {
+        min-height: 20vh;
+    }
+    .banner a {
+        font-size: 15px;
+        padding: 15px;
+
+    }
+    .content {
+        grid-template-columns: 1fr;
+        margin: auto 0.5em;
+        text-align: justify;
+    }
+    .contact-content {
+        margin: 0px;
+    }
+    .service-content {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 15px;
+    }
+    .horizental {
+        flex-direction: column;
+        align-items: center;
+    }
+    .type {
+        max-width: 100%;
+    }
+    .nav-button {
+        display: block;
+        grid-column-start: 2;
+        justify-self: end;
+    }
+    .navigation {
+        transition: 1s;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navigation.open {
+        transition: 1.5s;
+        max-height: 50vh;
+    }
+    .navigation a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-image {
+        width: 100%;
+        max-width: 100%;
+        object-position: center;
+    }
+    .image {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner h1 {
+        font-size: 15px;
+        padding: 8px;
+    }
+    .footer {
+        padding: 0px;
+    }
+}
