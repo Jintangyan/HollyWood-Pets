@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
 
   <style>
     body {
@@ -284,27 +286,43 @@
         font-size: 150px;
       }
     }
-
-
     .card {
       display: flex;
     }
-
-
 
 .part {
   margin-right: 5px; 
 }
 
 
-    .part {
-      margin-right: 20px;
-    }
-
-
     .part p {
       margin: 0;
     }
+    .cards_container_contact {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+    .contact_Card{
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .font_colour
+        {
+          color: #f4511e;
+        }
+        .font_colour a {
+          color: #f4511e; 
+          text-decoration: none; 
+        }
   </style>
 
 </head>
@@ -738,13 +756,50 @@
    
      
         
-        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        
+        
+        
+        
+        <div class="cards_container_contact">
+        <div class="contact_Card">
+          <!-- Card 1 Content -->
+
+          <span class="glyphicon glyphicon-map-marker logo-small"></span> 
+          <h3>ADDRESS</h3>
+          
+          <p>3/125 Great N Rd, Five Dock NSW 2046</p>
+      </div>
+  
+      <div class="contact_Card">
+          <!-- Card 2 Content -->
+          <span class="glyphicon glyphicon-phone logo-small"></span>
+          <h3>PHONE</h3>
+          
+          <p class="font_colour">0450 007 999</p>
+        
+      </div>
+  
+      <div class="contact_Card">
+          <!-- Card 3 Content -->
+          <span class="glyphicon glyphicon-envelope logo-small"></span> 
+          <h3>EMAIL</h3>
+          
+          <p class="font_colour">hoyllywood_pets@hotmail.com</p>
+          
+      </div>
+  
+      <div class="contact_Card">
+        <!-- Card 4 Content -->
+       
+        <span class="glyphicon glyphicon-comment logo-small"></span> 
+        <h3>SOCIAL MEDIA</h3>
+       
+        <p class="font_colour">
+          <a href="https://www.facebook.com/HollywoodPets.Sydney/" target="_blank">Facebook</a>
+      </p>
+    </div>
       
-      
-      
-    
+  </div>
   </div>
 
   <!-- Image of location/map -->
