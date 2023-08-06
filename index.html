@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
   <style>
     body {
@@ -316,12 +316,6 @@
       margin-right: 5px;
     }
 
-
-    .part {
-      margin-right: 20px;
-    }
-
-
     .part p {
       margin: 0;
     }
@@ -537,7 +531,7 @@
           <div class="panel-heading">
             <h1>COLOURING</h1>
           </div>
-
+        
           <P>Full Body Colour Restoring/<br> Fashionable Dyeing</P>
           <div class="panel-body">
             <div class="card">
@@ -573,11 +567,11 @@
       </div>
 
     </div>
-  </div>
-  </div>
   <!-- </div> -->
-
-  <div id="pricing" class="container-fluid">
+  <!-- </div>
+  </div> -->
+<!-- second pricing section -->
+  <!-- <div id="pricing" class="container-fluid"> -->
 
     <div class="row slideanim">
       <div class="col-sm-4 col-xs-12">
@@ -587,7 +581,6 @@
           </div>
           <!-- Container (styling cut) -->
           <div class="panel-body">
-
             <div class="card">
               <div class="part">
                 <p>STYLING CUT</p>
@@ -595,8 +588,6 @@
                 <p>Fluffy Legs</p>
                 <p>Tile</p>
                 <p>Engraving</p>
-
-
               </div>
               <div class="part">
                 <p>Based on a Full Groom</p>
@@ -610,11 +601,9 @@
             </div>
           </div>
           <p>Traditional poodle Cut//Toy $100 //Mini $115 //Standard $125//Schnauzer Cut// MIni $100//Giant $140</p>
-
         </div>
       </div>
       <!-- Container (Extra services) -->
-
       <div class="col-sm-4 col-xs-12">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -622,6 +611,7 @@
           </div>
           <div class="panel-body">
             <div class="card">
+              <!-- extra servie -->
               <div class="part">
                 <p>EXTRA SERVICES</p>
                 <p>Nail Clipping</p>
@@ -632,7 +622,8 @@
                 <p>Anal Glands Expression</p>
                 <p>Dematting</p>
               </div>
-
+              
+              <!-- other service -->
               <div class="part">
                 <p>Based on other services</p>
                 <p>$10</p>
@@ -649,10 +640,9 @@
 
         </div>
       </div>
-
     </div>
   </div>
-  </div>
+  <!-- </div> -->
 
 
   <!-- Container (gallery & social Section) -->
@@ -760,13 +750,9 @@
       "images/before&after/style7.jpeg",
 
     ];
-
     var gcurrentIndex = 0;
-
-
     // Initialize the gallery with the first image
     document.getElementById("gallery-image").src = images[gcurrentIndex];
-
     function move(step) {
       gcurrentIndex += step;
       if (gcurrentIndex < 0) gcurrentIndex = images.length - 1;
@@ -775,7 +761,6 @@
     }
 
     //looping images in social container
-
     const carouselImages = document.getElementById('scarousel-images');
     let currentIndex = 0;
     const imagesCount = carouselImages.children.length;
@@ -790,8 +775,6 @@
       }
       carouselImages.style.transform = `translateX(${-currentIndex * 300}px)`;
     }
-
-
 
 
     $(document).ready(function () {
