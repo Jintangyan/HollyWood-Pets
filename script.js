@@ -1,5 +1,5 @@
-// open and close navigation
-// button.addEventListener()
+//open and close navigation
+button.addEventListener()
 function onload(evt) {
     const button = document.querySelector('.nav-button')
     const nav = document.querySelector('.navigation')
