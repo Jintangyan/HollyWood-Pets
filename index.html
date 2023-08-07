@@ -304,12 +304,9 @@
         font-size: 150px;
       }
     }
-
-
     .card {
       display: flex;
     }
-
 
 
     .part {
@@ -317,14 +314,34 @@
     }
 
 
-    .part {
-      margin-right: 20px;
-    }
-
-
     .part p {
       margin: 0;
     }
+    .cards_container_contact {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+    .contact_Card{
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .font_colour
+        {
+          color: #f4511e;
+        }
+        .font_colour a {
+          color: #f4511e; 
+          text-decoration: none; 
+        }
   </style>
 
 </head>
@@ -407,35 +424,27 @@
 
       </div>
       <div class="col-sm-4">
-        <img src="images/icon/colouring.png" alt="colouring" width="60px" heigh="60px">
-
-        <br>
-        <br>
-        <h4>COLOURING</h4>
-
+        <span class="glyphicon glyphicon-lock logo-small"></span>
+        <h4>JOB DONE</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
       </div>
     </div>
     <br><br>
     <div class="row slideanim">
       <div class="col-sm-4">
-
-        <img src="images/icon/haircut.png" alt="cut" width="60px" heigh="60px">
-        <br><br>
-        <h4>STYLING CUT</h4>
-
+        <span class="glyphicon glyphicon-leaf logo-small"></span>
+        <h4>GREEN</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
       </div>
       <div class="col-sm-4">
-
-        <img src="images/icon/extra.png" alt="extra" width="60px" heigh="60px">
-        <br><br>
-        <h4>EXTRA SERVICES</h4>
-
+        <span class="glyphicon glyphicon-certificate logo-small"></span>
+        <h4>CERTIFIED</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
       </div>
       <div class="col-sm-4">
-        <img src="images/icon/extra/grooming.png" alt="cut" width="60px" heigh="60px">
-        <br><br>
-        <h4 style="color:#303030;">MORE</h4>
-
+        <span class="glyphicon glyphicon-wrench logo-small"></span>
+        <h4 style="color:#303030;">HARD WORK</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
       </div>
     </div>
   </div>
@@ -537,8 +546,8 @@
           <div class="panel-heading">
             <h1>COLOURING</h1>
           </div>
-
-          <P>Full Body Colour Restoring/<br> Fashionable Dyeing</P>
+          <br>
+          <P>Full Body Colour Restoring/Fashionable Dyeing</P>
           <div class="panel-body">
             <div class="card">
               <div class="part">
@@ -575,46 +584,15 @@
     </div>
   </div>
   </div>
-  <!-- </div> -->
-
-  <div id="pricing" class="container-fluid">
-
-    <div class="row slideanim">
-      <div class="col-sm-4 col-xs-12">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
-            <h1>STYLING CUT</h1>
-          </div>
-          <!-- Container (styling cut) -->
-          <div class="panel-body">
-
-            <div class="card">
-              <div class="part">
-                <p>STYLING CUT</p>
-                <p>Designed Head Cut</p>
-                <p>Fluffy Legs</p>
-                <p>Tile</p>
-                <p>Engraving</p>
-
-
-              </div>
-              <div class="part">
-                <p>Based on a Full Groom</p>
-                <p>Extra $10-$20</p>
-                <p>Extra $10</p>
-                <p>Extra $5</p>
-                <p>Extra $15-$50+</p>
 
 
               </div>
             </div>
           </div>
           <p>Traditional poodle Cut//Toy $100 //Mini $115 //Standard $125//Schnauzer Cut// MIni $100//Giant $140</p>
-
         </div>
       </div>
       <!-- Container (Extra services) -->
-
       <div class="col-sm-4 col-xs-12">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -622,6 +600,7 @@
           </div>
           <div class="panel-body">
             <div class="card">
+              <!-- extra servie -->
               <div class="part">
                 <p>EXTRA SERVICES</p>
                 <p>Nail Clipping</p>
@@ -632,7 +611,8 @@
                 <p>Anal Glands Expression</p>
                 <p>Dematting</p>
               </div>
-
+              
+              <!-- other service -->
               <div class="part">
                 <p>Based on other services</p>
                 <p>$10</p>
@@ -649,14 +629,13 @@
 
         </div>
       </div>
-
     </div>
   </div>
   </div>
 
 
   <!-- Container (gallery & social Section) -->
-
+{# 
   <div id="gallery" class="container-fluid text-center bg-grey">
     <h2>GALLERY&SOCIAL</h2><br>
     <h3>Check our fabulous team works</h3>
@@ -715,7 +694,7 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div> -->
   </div>
 
 
@@ -723,16 +702,30 @@
   <!-- Container (Contact Section) -->
   <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
-
-
-
-    <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-    <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-
-
-
-
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Image of location/map -->
@@ -760,13 +753,9 @@
       "images/before&after/style7.jpeg",
 
     ];
-
     var gcurrentIndex = 0;
-
-
     // Initialize the gallery with the first image
     document.getElementById("gallery-image").src = images[gcurrentIndex];
-
     function move(step) {
       gcurrentIndex += step;
       if (gcurrentIndex < 0) gcurrentIndex = images.length - 1;
@@ -775,7 +764,6 @@
     }
 
     //looping images in social container
-
     const carouselImages = document.getElementById('scarousel-images');
     let currentIndex = 0;
     const imagesCount = carouselImages.children.length;
@@ -790,6 +778,78 @@
       }
       carouselImages.style.transform = `translateX(${-currentIndex * 300}px)`;
     }
+
+
+    // var images = [
+      // "images/social/social.jpg",
+      // "images/social/social1.jpg",
+      // "images/social/social2.jpg",
+      // "images/social/social3.jpeg",
+      // "images/social/social4.jpeg",
+      // "images/social/social5.jpeg",
+      // "images/social/social6.jpeg",
+      // "images/social/social8.jpeg",
+
+    // ];
+
+    // var scurrentIndex = 0;
+
+
+    // // Initialize the gallery with the first image
+    // document.getElementById("social-image").src = images[scurrentIndex];
+
+    // function move(step) {
+    //   scurrentIndex += step;
+    //   if (scurrentIndex < 0) scurrentIndex = images.length - 1;
+    //   if (scurrentIndex >= images.length) scurrentIndex = 0;
+    //   document.getElementById("social-image").src = images[scurrentIndex];
+    // }
+
+
+    //Function to move the carousel
+    // function move(carouselId, index) {
+    //   var carouselElement = document.getElementById(carouselId);
+    //   var carouselImages = [];
+
+    //   // Check which carousel is being moved and get the appropriate image sources
+    //   if (carouselId === "galleryCarousel") {
+    //     carouselImages = ["images/before&after/315552192_571028285025421_3382647228743310304_n.jpeg",
+    //       "images/before&after/316688529_574066481388268_5039149725219494825_n.jpeg",
+    //       "images/before&after/316821641_578524574275792_3284985987637984131_n.jpeg",
+    //       "images/before&after/style2.webp",
+    //       "images/before&after/style3.jpeg",
+    //       "images/before&after/style4.jpeg",
+    //       "images/before&after/style5.jpeg",
+    //       "images/before&after/style6.jpeg",
+    //       "images/before&after/style7.jpeg",];
+    //   } else if (carouselId === "socialCarousel") {
+    //     carouselImages = ["images/social/social.jpg",
+    //       "images/social/social1.jpg",
+    //       "images/social/social2.jpg",
+    //       "images/social/social3.jpeg",
+    //       "images/social/social4.jpeg",
+    //       "images/social/social5.jpeg",
+    //       "images/social/social6.jpeg",
+    //       "images/social/social8.jpeg",
+    //     ];
+    //   }
+
+    //   // Get the current active slide index
+    //   var currentIndex = parseInt(carouselElement.querySelector(".item.active").getAttribute("data-slide-to"));
+
+    //   // Calculate the new index after moving left or right
+    //   var newIndex = (currentIndex + index + carouselImages.length) % carouselImages.length;
+
+    //   // Update the carousel slide image source
+    //   carouselElement.querySelector("#" + carouselId + "-image").src = carouselImages[newIndex];
+
+    //   // Update the carousel indicators (if any)
+    //   var indicators = carouselElement.querySelectorAll(".carousel-indicators li");
+    //   for (var i = 0; i < indicators.length; i++) {
+    //     indicators[i].classList.remove("active");
+    //   }
+    //   indicators[newIndex].classList.add("active");
+    // }
 
 
 
