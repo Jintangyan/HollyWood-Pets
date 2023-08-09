@@ -139,6 +139,8 @@
       border: 1px solid #f4511e;
       border-radius: 0 !important;
       transition: box-shadow 0.5s;
+      width: 360px;
+      height: 410px;
     }
 
     .panel:hover {
@@ -304,9 +306,10 @@
         font-size: 150px;
       }
     }
+   
 
     .card {
-      display: flex;
+      display: inline-flex;
     }
 
 
@@ -329,7 +332,6 @@
     .contact_Card {
       display: inline-block;
       width: 200px;
-      height: 300px;
       margin: 10px;
       padding: 10px;
       flex-direction: column;
@@ -346,6 +348,24 @@
       color: #f4511e;
       text-decoration: none;
     }
+    .card_contact_time {
+             
+      display: flex;
+      justify-content: center; 
+      align-items: center;         
+      margin: 0;
+     
+     
+                  
+}
+.section_contact_time {
+  
+  padding: 20px;   
+  margin-top: auto;     
+  
+}
+
+
   </style>
 
 </head>
@@ -413,14 +433,14 @@
     <div class="row slideanim">
       <div class="col-sm-4">
 
-        <img src="images/icon/bath.png" alt="Bath" width="60px" heigh="60px">
+        <img src="images/icon/bath.png" alt="Bath" width="60px" >
         <br>
         <br>
         <h4>BATH & DRY</h4>
 
       </div>
       <div class="col-sm-4">
-        <img src="images/icon/grooming.png" alt="Grooming" width="60px" heigh="60px">
+        <img src="images/icon/grooming.png" alt="Grooming" width="60px" >
 
         <br>
         <br>
@@ -428,7 +448,7 @@
 
       </div>
       <div class="col-sm-4">
-        <img src="images/icon/colouring.png" alt="colouring" width="60px" height="60px">
+        <img src="images/icon/colouring.png" alt="colouring" width="60px" 
 
         <br>
         <br>
@@ -440,20 +460,20 @@
     <div class="row slideanim">
       <div class="col-sm-4">
 
-        <img src="images/icon/haircut.png" alt="cut" width="60px" height="60px">
+        <img src="images/icon/haircut.png" alt="cut" width="60px" >
         <br><br>
         <h4>STYLING CUT</h4>
 
       </div>
       <div class="col-sm-4">
 
-        <img src="images/icon/extra.png" alt="extra" width="60px" height="60px">
+        <img src="images/icon/extra.png" alt="extra" width="60px" >
         <br><br>
         <h4>EXTRA SERVICES</h4>
 
       </div>
       <div class="col-sm-4">
-        <img src="images/icon/extra/grooming.png" alt="cut" width="60px" height="60px">
+        <img src="images/icon/extra/grooming.png" alt="cut" width="60px" >
         <br><br>
         <h4 style="color:#303030;">MORE</h4>
 
@@ -506,7 +526,7 @@
               </div>
             </div>
           </div>
-          <p>Include nail clip, ear cleans, anal gland expression and a tidy up clip</p>
+          <p class="font_colour">Include nail clipping, ear cleaning, anal gland expression, and a tidy-up clip</p>
 
         </div>
       </div>
@@ -547,7 +567,7 @@
               </div>
             </div>
           </div>
-          <p>Include bath,dry, nail clips, ear cleans,anal gland expression.</p>
+          <p class="font_colour">Included are a bath, drying, nail clipping, ear cleaning, and anal gland expression</p>
 
 
         </div>
@@ -559,7 +579,7 @@
             <h1>COLOURING</h1>
           </div>
 
-          <P>Full Body Colour Restoring/<br> Fashionable Dyeing</P>
+          <P class="font_colour">Full Body Colour Restoring/<br>Fashionable Dyeing</P>
           <div class="panel-body">
             <div class="card">
               <div class="part">
@@ -586,7 +606,7 @@
             </div>
           </div>
 
-          <p>Include bath & towel dry. Single Colour per section </p>
+          <p class="font_colour">Includes a bath and towel dry, with an option for a single colour per section</p>
 
         </div>
 
@@ -627,7 +647,7 @@
               </div>
             </div>
           </div>
-          <p>Traditional poodle Cut//Toy $100 //Mini $115 //Standard $125//Schnauzer Cut// MIni $100//Giant $140</p>
+          <p class="font_colour">Traditional poodle Cut//Toy $100 //Mini $115 //Standard $125//Schnauzer Cut//MIni $100//Giant $140</p>
         </div>
       </div>
       <!-- Container (Extra services) -->
@@ -652,7 +672,7 @@
 
               <!-- other service -->
               <div class="part">
-                <p>Based on other services</p>
+                <p>Price</p>
                 <p>$10</p>
                 <p>$10</p>
                 <p>$5-$10 </p>
@@ -667,7 +687,7 @@
       </div>
     </div>
   </div>
-  {# </div> #}
+  
 
 
   <!-- Container (gallery & social Section) -->
@@ -738,6 +758,10 @@
   <!-- Container (Contact Section) -->
   <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
+    <div class="cards_container_contact">
+    <h3 class="font_colour">Get In Touch</h3>
+  </div>
+    <br>
 
     <div class="cards_container_contact">
       <div class="contact_Card">
@@ -777,8 +801,33 @@
           <a href="https://www.facebook.com/HollywoodPets.Sydney/" target="_blank">Facebook</a>
         </p>
       </div>
-
     </div>
+
+    <div class="card_contact_time">
+      <div class="section_contact_time">
+        <span class="glyphicon glyphicon-time logo-small"></span>
+        <p>Sunday</p>
+        <p>Monday</p>
+        <p>Tuesday</p>
+        <p>Wednesday</p>
+        <p>Thursday</p>
+        <p>Friday</p>
+        <p>Saturday</p>
+        </div>
+        <div class="section_contact_time">
+          
+        <p style="font-size: 25px;"><b>Business Hours</b></p>
+        <p class="font_colour"><b>CLOSE</b></p>
+        <p class="font_colour"><b>CLOSE</b></p>
+        <p><b>09:30 AM - 5:00 PM</b></p>
+        <p><b>09:30 AM - 5:00 PM</b></p>
+        <p><b>09:30 AM - 5:00 PM</b></p>
+        <p><b>09:30 AM - 5:00 PM</b></p>
+        <p><b>09:30 AM - 5:00 PM</b></p>
+      
+    </div>
+</div>
+   
   </div>
 
   <!-- Image of location/map -->
@@ -788,7 +837,7 @@
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>CopyRight 2023<br>Website code and design by MJ</p>
+    <p> <span class="	glyphicon glyphicon-copyright-mark "></span> CopyRight 2023 <b class="font_colour">HollyWood Pets</b><br>Website code and design by <b class="font_colour">MJ</b> </p>
   </footer>
 
   <script>
