@@ -22,7 +22,6 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
-      overflow-x: hidden; 
       
     }
 
@@ -58,10 +57,13 @@
     .jumbotron-img-center {
       padding: auto;
       display: inline-flex;
+      max-width: 100%;
+      margin: 0 auto;
     }
 
     .jumbotron-img {
       align-items: center;
+      max-width: 100%;
 
     }
 
@@ -305,13 +307,20 @@
     @media screen and (max-width: 768px) {
       .col-sm-4 {
         text-align: center;
-        margin: 25px 0;
+     
+        
       }
 
       .btn-lg {
         width: 100%;
         margin-bottom: 35px;
       }
+      .card_contact_time .section_contact_time {
+        text-align: left; 
+        padding: 10px; 
+    }
+    
+   
     }
 
     @media screen and (max-width: 480px) {
@@ -372,9 +381,6 @@
   margin-top: auto;     
   
 }
-
-
-
 
 
   </style>
@@ -782,9 +788,10 @@
 
         <span class="glyphicon glyphicon-map-marker logo-small"></span>
         <h3>ADDRESS</h3>
-
+        <div class="font_colour">
         <a href="https://www.google.com/maps/place/Hollywood+pets/@-33.8685143,151.1293239,21z/data=!4m15!1m8!3m7!1s0x6b12a552adf7512b:0x2147501ec943205e!2s3%2F125+Great+N+Rd,+Five+Dock+NSW+2046!3b1!8m2!3d-33.868612!4d151.1293761!16s%2Fg%2F11qpkn1sh2!3m5!1s0x6b12a552adc0a3c1:0xc0c4877e34d59c66!8m2!3d-33.868579!4d151.1294703!16s%2Fg%2F11g88c5zp6?entry=ttu" target="_blank">3/125 Great N Rd, Five Dock NSW 2046</a>
       </div>
+    </div>
 
       <div class="contact_Card">
         <!-- Card 2 Content -->
@@ -815,7 +822,7 @@
         </p>
       </div>
     </div>
-
+    
     <div class="card_contact_time">
       <div class="section_contact_time">
         <span class="glyphicon glyphicon-time logo-small"></span>
@@ -840,7 +847,6 @@
       
     </div>
 </div>
-   
   </div>
 
 
