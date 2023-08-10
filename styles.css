@@ -141,7 +141,7 @@
     margin-bottom: 20px;
     color: #f4511e;
   }
-  .slideanim {visibility:hidden;}
+  .slideanim {visibility:visible;}
   .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
