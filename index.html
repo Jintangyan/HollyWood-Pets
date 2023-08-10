@@ -22,6 +22,8 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+      overflow-x: hidden; 
+      
     }
 
     h2 {
@@ -324,29 +326,26 @@
     }
 
 
-
-    .part {
-      margin-right: 5px;
-    }
-
-
     .part p {
       margin: 0;
     }
 
     .cards_container_contact {
-      display: flex;
-      justify-content: center;
+      
+      display: flex; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+      gap: 10px; 
 
     }
 
     .contact_Card {
       display: inline-block;
-      width: 200px;
+      width: 250px;
+      height: 300px;
       margin: 10px;
-      padding: 10px;
-      flex-direction: column;
-      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
       align-items: center;
       text-align: center;
     }
@@ -365,9 +364,7 @@
       justify-content: center; 
       align-items: center;         
       margin: 0;
-     
-     
-                  
+             
 }
 .section_contact_time {
   
@@ -375,6 +372,9 @@
   margin-top: auto;     
   
 }
+
+
+
 
 
   </style>
